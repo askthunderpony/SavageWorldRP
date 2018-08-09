@@ -7,7 +7,7 @@ jdk:
 script:
 - echo $CLASSPATH
 - chmod +x gradlew #build script
-- "./gradlew assemble"
+# - "./gradlew assemble"
 - "./gradlew setupDecompWorkspace"
 - "./gradlew build --refresh-dependencies"
 - "./gradlew test"

@@ -110,7 +110,6 @@ public class TestMainContainer {
                 fail(); // ... в инвентаре игрока не остается очков прокачки
             }
         }
-        fail();
     }
 
     /**

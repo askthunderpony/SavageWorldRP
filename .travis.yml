@@ -8,7 +8,7 @@ script:
 - echo $CLASSPATH
 - chmod +x gradlew #build script
 - "./gradlew setupDecompWorkspace"
-- "./gradlew build"
+- "./gradlew build --refresh-dependencies"
 - "./gradlew test"
 - "./gradlew jar"
 - cd build

@@ -6,7 +6,7 @@ jdk:
 - oraclejdk8
 script:
 - echo $CLASSPATH
-- chmod +x gradlew #build script
+#- chmod +x gradlew #build script
 # - "./gradlew assemble"
 # - "./gradlew setupDecompWorkspace"
 - "./gradlew build"

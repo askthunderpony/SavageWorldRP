@@ -33,6 +33,8 @@ deploy:
   api_key:
     secure: LpCazgalt05yVKs7l1YG60LoM4Vv4NNFRvKmmtpylw/ycR9Edkizu2bmBFJHKoXtwWOxOpisSQnYhQmjAZ0Q2afucYhtbGktz7913RXwnxC5Kh/8ukpI/K+gTT3wbP4GVL8N4ExWJk67Bm2gVHxC4kHFpVB2moXuWOniEFVPnCQCXL2vd/IEKaj4YO255/FdMy9QGKMc3KwerH8WSipAfWmv/MNzhWLGbl2Gv/1l6ig1AxKV+KelObKrHssY8qHnieIV1f2gKgfAIbdLTuKACTMLf55dXEzLs33W+rrKS5bR60TaWshj5Bx9baqbGDwkG/pVBmK214PVLAaP8FuAhgPmGCmy/EEMvVJgJ2v9L4zVc38oHz/Yl2fZmrylsanY2x+IagAZaK37Fmfn7h/as6T6t7sVkJzZqnSoytTn2b+Euk7fk04p2eoTO3YbgX2V/lsJJYozx+DctgVON6zMZac/O4MXgjObVLbctUVB9fDX+wqox8rnlSovXzNXHfNcwJA9wqc8x0KzpxWNSsrA9HWPy6CIXWXAn37sg+eQ6PEA3iXJRltl1sFlIUUplefeIJxANtOo4mjR5E4MDZHcKSLrI1eamqGPsfb5cDm1M1YMZd3q7nObvntSRb9FQFkmJgseMBtfEp4NJGZX9m4rh/g+Fz4NyfFY4HLoBidqSVQ=
   file: "/home/travis/build/askthunderpony/travis.test/build/libs/*"
+  name: "SavageWorldRP v0.0.$TRAVIS_BUILD_NUMBER"
+  body: "Дата $(date +'%d'.'%m'.'%Y')"
   on:
     repo: askthunderpony/SavageWorldRP
     branch: develop

@@ -8,16 +8,16 @@ script:
 - echo $CLASSPATH
 - chmod +x gradlew #build script
 # - "./gradlew assemble"
-- "./gradlew setupDecompWorkspace"
-- "./gradlew build --refresh-dependencies"
+# - "./gradlew setupDecompWorkspace"
+- "./gradlew build"
 - "./gradlew test"
 - "./gradlew jar"
-- cd build
-- ls
-- cd libs
-- ls
-- pwd
-- echo $TRAVIS_BUILD_NUMBER
+#- cd build
+#- ls
+#- cd libs
+#- ls
+#- pwd
+#- echo $TRAVIS_BUILD_NUMBER
 cache:
   directories:
   - "$HOME/.gradle"

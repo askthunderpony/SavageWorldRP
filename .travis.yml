@@ -1,0 +1,36 @@
+language: java
+sudo: false
+install:
+- gradle wrapper --gradle-version 4.2
+jdk:
+- oraclejdk8
+script:
+- chmod +x gradlew #build script
+- "./gradlew test"
+- "./gradlew build"
+- "./gradlew jar"
+- cd build
+- ls
+- cd libs
+- ls
+- pwd
+- echo $TRAVIS_BUILD_NUMBER
+cache:
+  directories:
+  - "$HOME/.gradle"
+  - ".gradle"
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "RareScrap"
+  - git config --local user.email "RareScrap@users.noreply.github.com"
+  - git tag "v0.0.$TRAVIS_BUILD_NUMBER"
+deploy:
+  provider: releases
+  api_key: 45349fde40bf6ecbd09f6afc3f10b6aaf28d6f1e
+  file: "/home/travis/build/askthunderpony/travis.test/build/libs/*"
+  skip_cleanup: true
+  file_glob: true
+  name: "SavageWorldRP v0.0.$TRAVIS_BUILD_NUMBER"
+  body: "Дата $(date +'%d'.'%m'.'%Y')"
+  on:
+    repo: askthunderpony/SavageWorldRP

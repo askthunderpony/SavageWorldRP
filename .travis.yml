@@ -7,8 +7,8 @@ jdk:
 script:
 - chmod +x gradlew #build script
 - "./gradlew setupDecompWorkspace"
-- "./gradlew test"
 - "./gradlew build"
+- "./gradlew test"
 - "./gradlew jar"
 - cd build
 - ls

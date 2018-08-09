@@ -26,7 +26,8 @@ before_deploy:
   - git tag "v0.0.$TRAVIS_BUILD_NUMBER"
 deploy:
   provider: releases
-  api_key: 45349fde40bf6ecbd09f6afc3f10b6aaf28d6f1e
+  api_key:
+    secure: QugjvsMbmVNwx9wO95+/k0w/MpI1rPk3dxLUiJIvg/mtGVeLJOzUu7jSwu7jUTGHBbwBJWEkUzyQLY2j2CNSskuY2NSmp39framUicjUWRZv0xsrtfwCdMat0FlktWiZ/uHJXvb3pLlhaAcS8lUCVEUWUIKqIlYoTasqWc3XcwXcHZblvd/tugJiQrkTbCRvHe48CbTVQ3/jwlH+rloPsh1Ux+inWQ29FJtcKp3J8wS3acY1NOSPQmMQhZzQQ/Dce1Y35jSRywwjybaWRQXTKjxYCmMwR35nI0uyHyZ5esBXempRmw4FM2+HMEV8Y4j2LhMmgTTCxUdjvP6l8NcI83jHPp8vqrku1lUnzhn2aiO72JbkkHy953YJy5ZdxqH2+ldUsTlm5JDSuCLRViaBW27vELWcmkm/VP2Yi+J1gxw4m1P8lUEb9yu++cFMyQ0LlQo0S6+j/o7ydMmQyRbZlaMDYxfP5WqfwmAz0fqXph4jPVEx0h/56iC/r+MUusDjW0NefYAqJ2VVeYJl5EpwGrigViPfsroUYE8kE/DfEcbxKvPQpXkyK0t11vaPy2QJNN4bwOxxuOfHCJ0075iIYzYLO53Wk7Jq933ZkLf0AGUMdz5Ch3Gts9FxW1OC9whmf+oMIBz+igNc6e1+e+i9L3MHHMxObNZ+8SgGAxOH130=
   file: "/home/travis/build/askthunderpony/travis.test/build/libs/*"
   skip_cleanup: true
   file_glob: true

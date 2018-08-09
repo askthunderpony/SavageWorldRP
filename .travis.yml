@@ -17,10 +17,10 @@ script:
 - ls
 - pwd
 - echo $TRAVIS_BUILD_NUMBER
-cache:
-  directories:
-  - "$HOME/.gradle"
-  - ".gradle"
+#cache:
+#  directories:
+#  - "$HOME/.gradle"
+#  - ".gradle"
 before_deploy:
   # Set up git user name and tag this commit
   - git config --local user.name "askthunderpony"

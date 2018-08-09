@@ -6,6 +6,7 @@ jdk:
 - oraclejdk8
 script:
 - chmod +x gradlew #build script
+- "./gradlew setupDecompWorkspace"
 - "./gradlew test"
 - "./gradlew build"
 - "./gradlew jar"

@@ -21,8 +21,8 @@ cache:
   - ".gradle"
 before_deploy:
   # Set up git user name and tag this commit
-  - git config --local user.name "RareScrap"
-  - git config --local user.email "RareScrap@users.noreply.github.com"
+  - git config --local user.name "askthunderpony"
+  - git config --local user.email "askthunderpony@users.noreply.github.com"
   - git tag "v0.0.$TRAVIS_BUILD_NUMBER"
 deploy:
   provider: releases
